@@ -49,8 +49,6 @@ DuckieTV
                     if (!episode) return;
                     episode.markDownloaded().then(function(result) {
                         console.info("Episode marked as downloaded in database. ", episode.ID_Serie, episode.getFormattedEpisode());
-                        var audio = new Audio('tada.wav');
-                        audio.play();
                     });
                 });
             }
